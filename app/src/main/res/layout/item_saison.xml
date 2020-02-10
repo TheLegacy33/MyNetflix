@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingTop="10dp"
+	android:paddingStart="10dp"
+	android:paddingEnd="10dp"
+	>
+	<ImageView
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true"
+		android:id="@+id/ivSaisonIcon"
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:src="@drawable/tv_icon"
+		android:contentDescription="Icone Série"/>
+
+	<TextView
+		android:id="@+id/tvNumero"
+		android:layout_alignBaseline="@+id/ivSaisonIcon"
+		android:layout_toEndOf="@+id/ivSaisonIcon"
+		android:layout_width="wrap_content"
+		android:layout_height="30dp"
+		android:paddingStart="10dp"
+		android:paddingTop="6dp"
+		android:paddingEnd="6dp"
+		android:text="test"
+		android:textAppearance="?android:attr/textAppearanceListItem" />
+
+	<TextView
+		android:id="@+id/tvAnnee"
+		android:layout_alignBaseline="@+id/ivSaisonIcon"
+		android:layout_alignParentEnd="true"
+		android:layout_toEndOf="@+id/tvNumero"
+		android:layout_width="wrap_content"
+		android:layout_height="30dp"
+		android:paddingStart="20dp"
+		android:paddingTop="6dp"
+		android:paddingEnd="6dp"
+		android:text="test3"
+		android:textAlignment="textEnd"
+		android:textAppearance="?android:attr/textAppearanceListItemSecondary" />
+
+</RelativeLayout>

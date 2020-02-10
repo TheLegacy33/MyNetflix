@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/linearLayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="net.devatom.activities.LstSeriesActivity">
+
+	<ListView
+		android:id="@+id/lstSaisons"
+		android:layout_width="wrap_content"
+		android:layout_height="0dp"
+		android:baselineAligned="false"
+		android:divider="@color/colorPrimary"
+		android:dividerHeight="2px"
+		app:layout_constraintBottom_toTopOf="@+id/tvSize"
+		app:layout_constraintStart_toStartOf="@+id/tvSize"
+		app:layout_constraintTop_toTopOf="parent">
+
+	</ListView>
+
+	<TextView
+		android:id="@+id/tvSize"
+		android:layout_width="0dp"
+		android:layout_height="20dp"
+		android:background="#555"
+		android:text="TextView"
+		android:textAlignment="viewEnd"
+		android:paddingEnd="10dp"
+		android:textColor="#fff"
+		android:textStyle="italic"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/lstSaisons" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
